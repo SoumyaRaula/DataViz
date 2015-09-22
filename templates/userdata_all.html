@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+	<h2>Data for Visualization !</h2>
+	{% for userdata in userdata_all %}
+	<div>
+	<h3><a href="/userdata/get/{{ userdata.id }}/">{{ userdata.title }}</a></h3>
+	<p>{{ userdata.desc }}</p>
+	</div>
+	{% endfor %}
+{% endblock %}
