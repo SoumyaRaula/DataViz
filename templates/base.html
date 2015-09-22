@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Data Wizard{% endblock %}</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/loginassets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/loginassets/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/static/loginassets/css/form-elements.css">
+    <link rel="stylesheet" href="/static/loginassets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/mydata.css">
+	  
+</head>
+<body>
+	<div id="top-content">
+		{% block content %}{% endblock %}
+	</div>
+	<!-- Javascript -->
+     <script src="/static/loginassets/js/jquery-1.11.1.min.js"></script>
+     <script src="/static/loginassets/js/bootstrap.min.js"></script>
+     <script src="/static/loginassets/js/jquery.backstretch.min.js"></script>
+     <script src="/static/loginassets/js/scripts.js"></script>
+</body>
+</html>
